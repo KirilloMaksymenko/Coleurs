@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Couleur</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <H1>Veuillez choisir une couleur</H1>
+        <div class="block-choix-deux">
+            <div class="personnel">
+                <h3>Choix catalogue ou perconnel</h3>
+                <div class="choix">
+                    <label for="choixCatalogue" >Catalogue</label>
+                    <input type="radio" id="radioChoixCat" name="choixCP" value="catalog" id="choixCatalogue" title="catalogue" checked>
+                    <label for="choixPersonnel">Personnel</label>
+                    <input type="radio"id="radioChoixPer" name="choixCP" value="personel" id="choixPersonnel" title="personnel">
+                </div>
+            </div>
+            <div class="choix-catalogue" id="choixcolorcat">
+                <h3>Choix catalogue</h3>
+                <select class="select-catalogue" name="" id="selector-item-color">
+                    <option value="red">Rouge</option>
+                    <option value="yellow">Jeune</option>
+                    <option value="green">Vert</option>
+                    <option value="blue">Bleu</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="block-choix-couleur">
+            <h3>Choix de la couleur</h3>
+            <div class="choix-content" id="choixcolorper">
+                <div class="rgb-select" id="select-c-id">
+                    <div class="s-b">
+                        <span>RED</span>
+                        <input type="range" name="red" id="red-c-id" class="select-value" max="255" min="0" value="0">
+                        <label  id="red-lb">0</label>
+                    </div>
+                   
+                   <div class="s-b">
+                        <span>GREEN</span>
+                        <input type="range" name="green" id="green-c-id" class="select-value" max="255" min="0" value="0">
+                        <label  id="green-lb">0</label>
+                    </div>
+                   
+                    <div class="s-b">
+                        <span>BLUE</span>
+                        <input type="range" name="blue" id="blue-c-id" class="select-value" max="255" min="0" value="0">
+                        <label  id="blue-lb">0</label>
+                    </div>
+                    
+                </div>
+                
+            </div><br>
+            <div class="visualise-couleur">
+                <div class="panel" id="viewport-color"></div>
+            </div>
+        </div>
+
+        <div class="block-quantite">
+            <h3>Quantite</h3>
+            <select class="select-quantite" name="" id="quantite-value">
+                <option value="0.5">0.5L</option>
+                <option value="1">1L</option>
+                <option value="5">5L</option>
+                <option value="10">10L</option>
+            </select>
+
+        </div>
+        <hr>
+        <div class="block-coordonnes">
+            <div class="content-coordonnes">
+                <h3>Vos Coordonnes</h3>
+                <div class="user-info">
+                    <div class="infos">
+                        <label for="nom">Nom: </label>
+                        <input type="text" name="nom" id="user-nom">
+                    </div>
+                    <div class="infos">
+                        <label for="prenom">Prenom: </label>
+                        <input type="text" name="prenom" id="user-prenom">
+                    </div>
+                    
+                </div>
+                <div class="address-info">
+                    <label for="address">Addresse</label>
+                    <textarea name="address" id="user-address" maxlength="90"></textarea>
+                </div>
+                <div class="buttob-conteiner">
+                    <button id="btn-envoe-id" class="btn-repond btn-envoe">Envoyer</button>
+                    <button id="btn-annule-id" class="btn-repond btn-annule">Annuler</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

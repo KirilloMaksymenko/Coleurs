@@ -1,0 +1,171 @@
+body{
+    background-color: #f7f7f7;
+    color: rgb(163, 163, 163);
+    font-family: "Inria Sans"
+}
+h3{}
+hr{
+    background: rgb(163, 163, 163);
+}
+h1{
+    margin-left: auto;
+    margin-right: 15%;
+}
+
+
+.disablet{
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+
+.container{}
+
+.block-choix-deux{}
+.personnel{}
+.choix{}
+.choix-catalogue{}
+.select-catalogue{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px;
+}
+.select-catalogue:focus{
+    border: none;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+
+}
+.select-catalogue:after{
+    border: none;
+    outline: none;
+}
+
+.block-choix-couleur{}
+.choix-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rgb-select{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+}
+.select-value{
+    
+    appearance: none;
+    border-radius: 20px;
+    margin-left: auto;
+}
+.s-b{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.s-b label{
+    position: relative;
+    right: 0;
+    width: 40px;
+}
+.visualise-couleur{}
+.panel{
+    border: none;
+    border-radius: 20px;
+    background: #000;
+    width: 100px;
+    height: 100px;
+}
+
+.block-quantite{}
+.select-quantite{}
+
+.block-coordonnes{
+    text-align: center;
+}
+.content-coordonnes{
+    width: 355px;
+    margin-left: auto;
+    margin-right: 15%;
+
+    justify-items: center;
+}
+.user-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.address-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.user-info input{
+    color: rgb(163, 163, 163);
+    padding-left:5px;
+    background-color: bisque;
+    border-radius: 20px;
+    height: 25px;
+    border: none;
+}
+.user-info input:focus{
+    outline: none;
+}
+.address-info textarea{
+    color: rgb(163, 163, 163);
+    padding:5px;
+    background-color: bisque;
+    border-radius: 20px;
+    border: none;
+    max-width: 355px;
+    resize: none;
+}
+.address-info textarea:focus{
+    outline: none;
+}
+.buttob-conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-repond{
+    color: rgb(163, 163, 163);
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+}
+.btn-repond:active{
+    background-color: #d8d8d8;
+}
+
+.btn-envoe{
+    background-color: rgb(225, 255, 181);
+}
+.btn-annule{
+    background-color: rgb(255, 181, 181);
+}
+
+
+
+
+.conatiner-c{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.color-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-personnel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
